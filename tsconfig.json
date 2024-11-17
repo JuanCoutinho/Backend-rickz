@@ -1,21 +1,20 @@
 {
-    "compilerOptions": {
-      "target": "es6",
-      "module": "commonjs",
-      "outDir": "./dist",
-      "rootDir": "./src",
-      "baseUrl": "./",
-      "paths": {
-        "@/*": ["src/*"]
-      },
-      "strict": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true,
-      "moduleResolution": "node",
-      "esModuleInterop": true,
-      "allowSyntheticDefaultImports": true
+  "compilerOptions": {
+    "target": "ES6", // Pode ser atualizado para ES2020 ou mais recente, se necessário.
+    "module": "commonjs",
+    "outDir": "./dist", // A pasta de saída para os arquivos JavaScript compilados.
+    "rootDir": "./src", // A pasta onde o TypeScript irá procurar os arquivos de origem.
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"] // Alias para importações mais limpas.
     },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules"]
-  }
-  
+    "strict": true, // Ativa todas as verificações de tipo estritas.
+    "skipLibCheck": true, // Pula a checagem de tipo para arquivos de definição.
+    "forceConsistentCasingInFileNames": true, // Garante consistência nos nomes de arquivos.
+    "moduleResolution": "node", // Usa a resolução de módulos Node.js.
+    "esModuleInterop": true, // Garante compatibilidade com módulos ES.
+    "allowSyntheticDefaultImports": true // Permite a importação de módulos sem um export padrão.
+  },
+  "include": ["src/**/*.ts"], // Inclui todos os arquivos .ts na pasta src.
+  "exclude": ["node_modules"] // Exclui a pasta node_modules da compilação.
+}
